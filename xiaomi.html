@@ -1,0 +1,1010 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>小米商城 - 小米9、小米MIX 3、红米Note 7，小米电视官方网站</title>
+    <link rel="stylesheet" type="text/css" href="css/xiaomi.css"/>
+    <link rel="stylesheet" type="text/css" href="https://at.alicdn.com/t/font_1182467_ms3v8e7qe6.css"/>
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon"/>
+    <script>
+        window.onload = function (ev) {
+            var banner = document.querySelectorAll(".banner img");
+            var btns = document.querySelectorAll(".point");
+            var num = 0
+
+
+            setInterval(function () {
+
+                if (num == 5) {
+                    num = 0;
+                }
+
+                for (var i = 0; i < banner.length; i++) {
+                    banner[i].style.display = "none";
+                    btns[i].style.background = "rgba(0,0,0,.4)"
+                }
+
+                banner[num].style.display = "block";
+                banner[num].style.animation = "banner-img-in .2s ease-in-out 0s 1";
+                btns[num].style.background = "rgba(255,255,255,.4)"
+                num++
+            }, 5000)
+            for (var k = 0; k < btns.length; k++) {
+                btns[k].index = k;
+                btns[k].onmouseover = function () {
+
+                    this.style.background = "rgba(255,255,255,.4)";
+
+                }
+                btns[k].onmouseout = function () {
+
+                    this.style.background = "rgba(0,0,0,.4)";
+                }
+            }
+            for (var l = 0; l < btns.length; l++) {
+                btns[l].index = l;
+                btns[l].onclick = function () {
+                    for (var m = 0; m < btns.length; m++) {
+                        banner[m].style.display = "none";
+                        btns[m].style.background = "rgba(0,0,0,.4)"
+
+                    }
+                    this.style.background = "rgba(255,255,255,.4)";
+                    banner[this.index].style.display = "block";
+                    banner[this.index].style.animation = "banner-img-in .2s ease-in-out 0s 1";
+                }
+            }
+
+        }
+
+    </script>
+</head>
+<body>
+<!-- 头部 -->
+<div class="header">
+    <div class="tou-1200">
+        <div class="header-left">
+            <a href="">小米商城</a><span>|</span><a href="">MIUI</a><span>|</span><a href="">LOT</a><span>|</span><a
+                href="">云服务</a><span>|</span>
+            <a href="">金融</a><span>|</span><a href="">有品</a><span>|</span><a href="">小爱开放平台</a><span>|</span><a href="">企业团购</a><span>|</span>
+            <a href="">资质证照</a><span>|</span><a href="">协议规则</a><span>|</span><a href="">下载app</a><span>|</span><a
+                href="">Select
+            Region</a>
+        </div>
+        <div class="header-right">
+            <div class="right2">
+                <a href=""><i class="iconfont icon-gouwuchekong-copy"></i>购物车(0)</a>
+            </div>
+            <div class="right1">
+                <a href="">登录</a><span>|</span><a href="">注册</a><span>|</span><span id="tongzhi">消息通知</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 标题 -->
+<div class="tuobiao">
+    <div class="logo1"><img src="img/logo.jpg" class="logo"></div>
+    <div class="biaoti">
+        <a href="">小米手机</a><a href="">红米</a><a href="">电视</a><a href="">笔记本</a><a href="">家电</a><a href="">新品</a><a
+            href="">路由器</a><a href="">智能硬件</a><a href="">服务</a><a href="">社区</a>
+    </div>
+    <div class="ss1">
+        <div class="sou" id="ss2"><i class="iconfont icon-sousuo"></i></div>
+        <div class="sousuo">
+            <input type="text">
+            <a href="" id="a1">小米9 SE</a><a href="">小米9</a>
+        </div>
+    </div>
+
+</div>
+<!-- banner -->
+<div class="banner">
+
+    <img src="img/b1.jpg" alt="">
+    <img src="img/b2.jpg" alt="">
+    <img src="img/b3.jpg" alt="">
+    <img src="img/b4.jpg" alt="">
+    <img src="img/b5.jpg" alt="">
+    <div class="lb">
+        <div class="bq">手机 电话卡 <i class="iconfont icon-arrow-backimg"></i></div>
+        <div class="bq">电视 盒子 <i class="iconfont icon-arrow-backimg"></i></div>
+        <div class="bq">笔记本 平板 <i class="iconfont icon-arrow-backimg"></i></div>
+        <div class="bq">家电 插线板 <i class="iconfont icon-arrow-backimg"></i></div>
+        <div class="bq">出行 穿戴 <i class="iconfont icon-arrow-backimg"></i></div>
+        <div class="bq">智能 路由器 <i class="iconfont icon-arrow-backimg"></i></div>
+        <div class="bq">电源 配件 <i class="iconfont icon-arrow-backimg"></i></div>
+        <div class="bq">健康 儿童 <i class="iconfont icon-arrow-backimg"></i></div>
+        <div class="bq">耳机 音箱 <i class="iconfont icon-arrow-backimg"></i></div>
+        <div class="bq">生活 箱包 <i class="iconfont icon-arrow-backimg"></i></div>
+
+        <a href="javascript:;" class="fh1"></a>
+        <a href="javascript:;" class="xy1"></a>
+    </div>
+    <div class="lbd1">
+        <div class="point onclick"></div>
+        <div class="point"></div>
+        <div class="point"></div>
+        <div class="point"></div>
+        <div class="point"></div>
+    </div>
+
+</div>
+
+
+<div class="mfk">
+    <div class="tg1">
+        <div class="sj-xg1">
+            <div class="icon"></div>
+            <i class="iconfont icon-xuangoushouji"></i>
+            <div class="wz">选购手机</div>
+        </div>
+        <div class="sj-xg1">
+            <div class="icon"></div>
+            <i class="iconfont icon-liwu9"></i>
+            <div class="wz">企业团购</div>
+        </div>
+        <div class="sj-xg1">
+            <div class="icon"></div>
+            <i class="iconfont icon-fma"></i>
+            <div class="wz">F码通道</div>
+        </div>
+        <div class="sj-xg1">
+            <div class="icon"></div>
+            <i class="iconfont icon-mifenqia-copy"></i>
+            <div class="wz">米粉卡</div>
+        </div>
+        <div class="sj-xg1">
+            <div class="icon"></div>
+            <i class="iconfont icon-yijiuhuanxin"></i>
+            <div class="wz">以旧换新</div>
+        </div>
+        <div class="sj-xg1">
+            <div class="icon"></div>
+            <i class="iconfont icon-huafeichongzhi-copy"></i>
+            <div class="wz">话费充值</div>
+        </div>
+    </div>
+    <img src="img/xmad_15553261995553_hjAqy.jpg" alt=""><img src="img/xmad_15566163158698_gwoiA.jpg" alt=""><img
+        src="img/xmad_15513348763999_sTLBm.jpg" alt=""></div>
+<img src="img/k20.jpg" alt="">
+<!-- 商品详情 -->
+<div class="shouji">
+    <div class="sj1">
+        <div class="ck1">
+            <a href="" class="sj2">手机</a>
+            <a href="" class="ckgd">查看全部 <i class="iconfont icon-arrow-backimg"></i></a>
+        </div>
+        <div class="sjxq">
+            <div class="sj-hs"><img src="img/heisha.jpg" alt="" class="sj-hs-z"></div>
+            <div class="sj-hs-y">
+                <div class="bk1">
+                    <div class="xp"><a href="">新品</a></div>
+                    <img src="img/pms_1550642182.7527088!220x220.jpg" alt="">
+                    <div class="xm1">小米9 6GB+128GB</div>
+                    <div class="xl">骁龙855，索尼4800万超广角微距三摄</div>
+                    <div class="rmb">2999元</div>
+                </div>
+                <div class="bk1">
+                    <div class="xp"><a href="">新品</a></div>
+                    <img src="img/pms_1550642182.7527088!220x220.jpg" alt="">
+                    <div class="xm1">小米9 6GB+128GB</div>
+                    <div class="xl">5.84"小水滴全面屏，后置1200万 AI 双摄</div>
+                    <div class="rmb">2999元</div>
+                </div>
+                <div class="bk1">
+                    <div class="xp"><a href="">新品</a></div>
+                    <img src="img/pms_1550642182.7527088!220x220.jpg" alt="">
+                    <div class="xm1">小米9 6GB+128GB</div>
+                    <div class="xl">骁龙855，索尼4800万超广角微距三摄</div>
+                    <div class="rmb">2999元</div>
+                </div>
+                <div class="bk1">
+                    <div class="xp"><a href="">新品</a></div>
+                    <img src="img/pms_1550642182.7527088!220x220.jpg" alt="">
+                    <div class="xm1">小米9 6GB+128GB</div>
+                    <div class="xl">骁龙855，索尼4800万超广角微距三摄</div>
+                    <div class="rmb">2999元</div>
+                </div>
+                <div class="bk1">
+                    <div class="xp"><a href="">新品</a></div>
+                    <img src="img/pms_1550642182.7527088!220x220.jpg" alt="">
+                    <div class="xm1">小米9 6GB+128GB</div>
+                    <div class="xl">骁龙855，索尼4800万超广角微距三摄</div>
+                    <div class="rmb">2999元</div>
+                </div>
+                <div class="bk1">
+                    <div class="xp"><a href="">新品</a></div>
+                    <img src="img/pms_1550642182.7527088!220x220.jpg" alt="">
+                    <div class="xm1">小米9 6GB+128GB</div>
+                    <div class="xl">骁龙855，索尼4800万超广角微距三摄</div>
+                    <div class="rmb">2999元</div>
+                </div>
+                <div class="bk1">
+                    <div class="xp"><a href="">新品</a></div>
+                    <img src="img/pms_1550642182.7527088!220x220.jpg" alt="">
+                    <div class="xm1">小米9 6GB+128GB</div>
+                    <div class="xl">骁龙855，索尼4800万超广角微距三摄</div>
+                    <div class="rmb">2999元</div>
+                </div>
+                <div class="bk1">
+                    <div class="xp"><a href="">新品</a></div>
+                    <img src="img/pms_1550642182.7527088!220x220.jpg" alt="">
+                    <div class="xm1">小米9 6GB+128GB</div>
+                    <div class="xl">骁龙855，索尼4800万超广角微距三摄</div>
+                    <div class="rmb">2999元</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="guanggao">
+    <img src="img/haoshi.jpg" alt="">
+</div>
+
+<div class="shouji">
+    <div class="sj1">
+        <div class="ck1">
+            <a href="" class="sj2">家电</a>
+            <div class="r-tabs">
+                <a href="javascript:;" class="r-tab show">热门</a><a href="javascript:;" class="r-tab">电视影音</a><a
+                    href="javascript:;" class="r-tab">电脑</a><a href="javascript:;" class="r-tab">家居</a>
+            </div>
+        </div>
+        <div class="sjxq">
+            <div class="sj-hs"><img src="img/jsq.jpg" alt="" class="sj-hs-zs"><img src="img/sdjqr.jpg" alt=""
+                                                                                   class="sj-hs-zs"></div>
+            <div class="sj-hs-y">
+                <div class="bk1 dw">
+                    <div class="dw1">洗的也干净，白色很好看</div>
+                    <div class="xp"><a href="">新品</a></div>
+                    <img src="img/xiyiji.jpg" alt="">
+                    <div class="xm1">米家互联网洗烘一体机10kg</div>
+                    <div class="xl">米家互联网洗烘一体机10kg</div>
+                    <div class="rmb">1999元</div>
+                </div>
+                <div class="bk1 dw">
+                    <div class="dw1">洗的也干净，白色很好看</div>
+                    <div class="xp"><a href="">新品</a></div>
+                    <img src="img/xiyiji.jpg" alt="">
+                    <div class="xm1">米家互联网洗烘一体机10kg</div>
+                    <div class="xl">米家互联网洗烘一体机10kg</div>
+                    <div class="rmb">1999元</div>
+                </div>
+                <div class="bk1 dw">
+                    <div class="dw1">洗的也干净，白色很好看</div>
+                    <div class="xp"><a href="">新品</a></div>
+                    <img src="img/xiyiji.jpg" alt="">
+                    <div class="xm1">米家互联网洗烘一体机10kg</div>
+                    <div class="xl">米家互联网洗烘一体机10kg</div>
+                    <div class="rmb">1999元</div>
+                </div>
+                <div class="bk1 dw">
+                    <div class="dw1">洗的也干净，白色很好看</div>
+                    <div class="xp"><a href="">新品</a></div>
+                    <img src="img/xiyiji.jpg" alt="">
+                    <div class="xm1">米家互联网洗烘一体机10kg</div>
+                    <div class="xl">米家互联网洗烘一体机10kg</div>
+                    <div class="rmb">1999元</div>
+                </div>
+                <div class="bk1 dw">
+                    <div class="dw1">洗的也干净，白色很好看</div>
+                    <div class="xp"><a href="">新品</a></div>
+                    <img src="img/xiyiji.jpg" alt="">
+                    <div class="xm1">米家互联网洗烘一体机10kg</div>
+                    <div class="xl">米家互联网洗烘一体机10kg</div>
+                    <div class="rmb">1999元</div>
+                </div>
+                <div class="bk1 dw">
+                    <div class="dw1">洗的也干净，白色很好看</div>
+                    <div class="xp"><a href="">新品</a></div>
+                    <img src="img/xiyiji.jpg" alt="">
+                    <div class="xm1">米家互联网洗烘一体机10kg</div>
+                    <div class="xl">米家互联网洗烘一体机10kg</div>
+                    <div class="rmb">1999元</div>
+                </div>
+                <div class="bk1 dw">
+                    <div class="dw1">洗的也干净，白色很好看</div>
+                    <div class="xp"><a href="">新品</a></div>
+                    <img src="img/xiyiji.jpg" alt="">
+                    <div class="xm1">米家互联网洗烘一体机10kg</div>
+                    <div class="xl">米家互联网洗烘一体机10kg</div>
+                    <div class="rmb">1999元</div>
+                </div>
+                <div class="bk1 dw">
+                    <div class="dw1">洗的也干净，白色很好看</div>
+                    <div class="xp"><a href="">新品</a></div>
+                    <img src="img/xiyiji.jpg" alt="">
+                    <div class="xm1">米家互联网洗烘一体机10kg</div>
+                    <div class="xl">米家互联网洗烘一体机10kg</div>
+                    <div class="rmb">1999元</div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+<div class="guanggao">
+    <img src="img/paomo.jpg" alt="">
+</div>
+
+<div class="shouji">
+    <div class="sj1">
+        <div class="ck1">
+            <a href="" class="sj2">智能</a>
+            <div class="r-tabs">
+                <a href="javascript:;" class="r-tab show">热门</a>
+                <a href="javascript:;" class="r-tab">出行</a>
+                <a href="javascript:;" class="r-tab">健康</a>
+                <a href="javascript:;" class="r-tab">酷玩</a>
+                <a href="javascript:;" class="r-tab">路由器</a>
+            </div>
+        </div>
+        <div class="sjxq">
+            <div class="sj-hs"><img src="img/shexiangji.jpg" alt="" class="sj-hs-zs"><img src="img/huabanche.jpg" alt=""
+                                                                                          class="sj-hs-zs"></div>
+            <div class="sj-hs-y">
+                <div class="bk1 dw">
+                    <div class="dw1">发货送货超级快</div>
+                    <div class="xp"><a href="">新品</a></div>
+                    <img src="img/taideng.png" alt="">
+                    <div class="xm1">米家飞利浦智睿台灯二代</div>
+                    <div class="xl">感知环境光，主动优化空间照明</div>
+                    <div class="rmb">179元</div>
+                </div>
+                <div class="bk1 dw">
+                    <div class="dw1">发货送货超级快</div>
+                    <div class="xp"><a href="">新品</a></div>
+                    <img src="img/taideng.png" alt="">
+                    <div class="xm1">米家飞利浦智睿台灯二代</div>
+                    <div class="xl">感知环境光，主动优化空间照明</div>
+                    <div class="rmb">179元</div>
+                </div>
+                <div class="bk1 dw">
+                    <div class="dw1">发货送货超级快</div>
+                    <div class="xp"><a href="">新品</a></div>
+                    <img src="img/taideng.png" alt="">
+                    <div class="xm1">米家飞利浦智睿台灯二代</div>
+                    <div class="xl">感知环境光，主动优化空间照明</div>
+                    <div class="rmb">179元</div>
+                </div>
+                <div class="bk1 dw">
+                    <div class="dw1">发货送货超级快</div>
+                    <div class="xp"><a href="">新品</a></div>
+                    <img src="img/taideng.png" alt="">
+                    <div class="xm1">米家飞利浦智睿台灯二代</div>
+                    <div class="xl">感知环境光，主动优化空间照明</div>
+                    <div class="rmb">179元</div>
+                </div>
+                <div class="bk1 dw">
+                    <div class="dw1">发货送货超级快</div>
+                    <div class="xp"><a href="">新品</a></div>
+                    <img src="img/taideng.png" alt="">
+                    <div class="xm1">米家飞利浦智睿台灯二代</div>
+                    <div class="xl">感知环境光，主动优化空间照明</div>
+                    <div class="rmb">179元</div>
+                </div>
+                <div class="bk1 dw">
+                    <div class="dw1">发货送货超级快</div>
+                    <div class="xp"><a href="">新品</a></div>
+                    <img src="img/taideng.png" alt="">
+                    <div class="xm1">米家飞利浦智睿台灯二代</div>
+                    <div class="xl">感知环境光，主动优化空间照明</div>
+                    <div class="rmb">179元</div>
+                </div>
+                <div class="bk1 dw">
+                    <div class="dw1">发货送货超级快</div>
+                    <div class="xp"><a href="">新品</a></div>
+                    <img src="img/taideng.png" alt="">
+                    <div class="xm1">米家飞利浦智睿台灯二代</div>
+                    <div class="xl">感知环境光，主动优化空间照明</div>
+                    <div class="rmb">179元</div>
+                </div>
+                <div class="bk1 dw">
+                    <div class="dw1">发货送货超级快</div>
+                    <div class="xp"><a href="">新品</a></div>
+                    <img src="img/taideng.png" alt="">
+                    <div class="xm1">米家飞利浦智睿台灯二代</div>
+                    <div class="xl">感知环境光，主动优化空间照明</div>
+                    <div class="rmb">179元</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<div class="guanggao">
+    <img src="img/bijiben.jpg" alt="">
+</div>
+
+<div class="shouji">
+    <div class="sj1">
+        <div class="ck1">
+            <a href="" class="sj2">搭配</a>
+            <div class="r-tabs">
+                <a href="javascript:;" class="r-tab show">热门</a><a href="javascript:;" class="r-tab">电视影音</a><a
+                    href="javascript:;" class="r-tab">电脑</a><a href="javascript:;" class="r-tab">家居</a>
+            </div>
+        </div>
+        <div class="sjxq">
+            <div class="sj-hs"><img src="img/jsq.jpg" alt="" class="sj-hs-zs"><img src="img/sdjqr.jpg" alt=""
+                                                                                   class="sj-hs-zs"></div>
+            <div class="sj-hs-y">
+                <div class="bk1 dw">
+                    <div class="dw1">洗的也干净，白色很好看</div>
+                    <div class="xp"><a href="">新品</a></div>
+                    <img src="img/xiyiji.jpg" alt="">
+                    <div class="xm1">米家互联网洗烘一体机10kg</div>
+                    <div class="xl">米家互联网洗烘一体机10kg</div>
+                    <div class="rmb">1999元</div>
+                </div>
+                <div class="bk1 dw">
+                    <div class="dw1">洗的也干净，白色很好看</div>
+                    <div class="xp"><a href="">新品</a></div>
+                    <img src="img/xiyiji.jpg" alt="">
+                    <div class="xm1">米家互联网洗烘一体机10kg</div>
+                    <div class="xl">米家互联网洗烘一体机10kg</div>
+                    <div class="rmb">1999元</div>
+                </div>
+                <div class="bk1 dw">
+                    <div class="dw1">洗的也干净，白色很好看</div>
+                    <div class="xp"><a href="">新品</a></div>
+                    <img src="img/xiyiji.jpg" alt="">
+                    <div class="xm1">米家互联网洗烘一体机10kg</div>
+                    <div class="xl">米家互联网洗烘一体机10kg</div>
+                    <div class="rmb">1999元</div>
+                </div>
+                <div class="bk1 dw">
+                    <div class="dw1">洗的也干净，白色很好看</div>
+                    <div class="xp"><a href="">新品</a></div>
+                    <img src="img/xiyiji.jpg" alt="">
+                    <div class="xm1">米家互联网洗烘一体机10kg</div>
+                    <div class="xl">米家互联网洗烘一体机10kg</div>
+                    <div class="rmb">1999元</div>
+                </div>
+                <div class="bk1 dw">
+                    <div class="dw1">洗的也干净，白色很好看</div>
+                    <div class="xp"><a href="">新品</a></div>
+                    <img src="img/xiyiji.jpg" alt="">
+                    <div class="xm1">米家互联网洗烘一体机10kg</div>
+                    <div class="xl">米家互联网洗烘一体机10kg</div>
+                    <div class="rmb">1999元</div>
+                </div>
+                <div class="bk1 dw">
+                    <div class="dw1">洗的也干净，白色很好看</div>
+                    <div class="xp"><a href="">新品</a></div>
+                    <img src="img/xiyiji.jpg" alt="">
+                    <div class="xm1">米家互联网洗烘一体机10kg</div>
+                    <div class="xl">米家互联网洗烘一体机10kg</div>
+                    <div class="rmb">1999元</div>
+                </div>
+                <div class="bk1 dw">
+                    <div class="dw1">洗的也干净，白色很好看</div>
+                    <div class="xp"><a href="">新品</a></div>
+                    <img src="img/xiyiji.jpg" alt="">
+                    <div class="xm1">米家互联网洗烘一体机10kg</div>
+                    <div class="xl">米家互联网洗烘一体机10kg</div>
+                    <div class="rmb">1999元</div>
+                </div>
+                <div class="bk1 dw">
+                    <div class="dw1">洗的也干净，白色很好看</div>
+                    <div class="xp"><a href="">新品</a></div>
+                    <img src="img/xiyiji.jpg" alt="">
+                    <div class="xm1">米家互联网洗烘一体机10kg</div>
+                    <div class="xl">米家互联网洗烘一体机10kg</div>
+                    <div class="rmb">1999元</div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+<div class="guanggao">
+    <img src="img/kongtiao.jpg" alt="">
+</div>
+
+<div class="shouji">
+    <div class="sj1">
+        <div class="ck1">
+            <a href="" class="sj2">周边</a>
+            <div class="r-tabs">
+                <a href="javascript:;" class="r-tab show">热门</a><a href="javascript:;" class="r-tab">电视影音</a><a
+                    href="javascript:;" class="r-tab">电脑</a><a href="javascript:;" class="r-tab">家居</a>
+            </div>
+        </div>
+        <div class="sjxq">
+            <div class="sj-hs"><img src="img/jsq.jpg" alt="" class="sj-hs-zs"><img src="img/sdjqr.jpg" alt=""
+                                                                                   class="sj-hs-zs"></div>
+            <div class="sj-hs-y">
+                <div class="bk1 dw">
+                    <div class="dw1">洗的也干净，白色很好看</div>
+                    <div class="xp"><a href="">新品</a></div>
+                    <img src="img/xiyiji.jpg" alt="">
+                    <div class="xm1">米家互联网洗烘一体机10kg</div>
+                    <div class="xl">米家互联网洗烘一体机10kg</div>
+                    <div class="rmb">1999元</div>
+                </div>
+                <div class="bk1 dw">
+                    <div class="dw1">洗的也干净，白色很好看</div>
+                    <div class="xp"><a href="">新品</a></div>
+                    <img src="img/xiyiji.jpg" alt="">
+                    <div class="xm1">米家互联网洗烘一体机10kg</div>
+                    <div class="xl">米家互联网洗烘一体机10kg</div>
+                    <div class="rmb">1999元</div>
+                </div>
+                <div class="bk1 dw">
+                    <div class="dw1">洗的也干净，白色很好看</div>
+                    <div class="xp"><a href="">新品</a></div>
+                    <img src="img/xiyiji.jpg" alt="">
+                    <div class="xm1">米家互联网洗烘一体机10kg</div>
+                    <div class="xl">米家互联网洗烘一体机10kg</div>
+                    <div class="rmb">1999元</div>
+                </div>
+                <div class="bk1 dw">
+                    <div class="dw1">洗的也干净，白色很好看</div>
+                    <div class="xp"><a href="">新品</a></div>
+                    <img src="img/xiyiji.jpg" alt="">
+                    <div class="xm1">米家互联网洗烘一体机10kg</div>
+                    <div class="xl">米家互联网洗烘一体机10kg</div>
+                    <div class="rmb">1999元</div>
+                </div>
+                <div class="bk1 dw">
+                    <div class="dw1">洗的也干净，白色很好看</div>
+                    <div class="xp"><a href="">新品</a></div>
+                    <img src="img/xiyiji.jpg" alt="">
+                    <div class="xm1">米家互联网洗烘一体机10kg</div>
+                    <div class="xl">米家互联网洗烘一体机10kg</div>
+                    <div class="rmb">1999元</div>
+                </div>
+                <div class="bk1 dw">
+                    <div class="dw1">洗的也干净，白色很好看</div>
+                    <div class="xp"><a href="">新品</a></div>
+                    <img src="img/xiyiji.jpg" alt="">
+                    <div class="xm1">米家互联网洗烘一体机10kg</div>
+                    <div class="xl">米家互联网洗烘一体机10kg</div>
+                    <div class="rmb">1999元</div>
+                </div>
+                <div class="bk1 dw">
+                    <div class="dw1">洗的也干净，白色很好看</div>
+                    <div class="xp"><a href="">新品</a></div>
+                    <img src="img/xiyiji.jpg" alt="">
+                    <div class="xm1">米家互联网洗烘一体机10kg</div>
+                    <div class="xl">米家互联网洗烘一体机10kg</div>
+                    <div class="rmb">1999元</div>
+                </div>
+                <div class="bk1 dw">
+                    <div class="dw1">洗的也干净，白色很好看</div>
+                    <div class="xp"><a href="">新品</a></div>
+                    <img src="img/xiyiji.jpg" alt="">
+                    <div class="xm1">米家互联网洗烘一体机10kg</div>
+                    <div class="xl">米家互联网洗烘一体机10kg</div>
+                    <div class="rmb">1999元</div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+<div class="guanggao">
+    <img src="img/xichenqi.jpg" alt="">
+</div>
+
+<div class="shouji">
+    <div class="sj1">
+        <div class="ck1">
+            <a href="" class="sj2">家电</a>
+            <div class="r-tabs">
+                <a href="javascript:;" class="r-tab show">热门</a><a href="javascript:;" class="r-tab">电视影音</a><a
+                    href="javascript:;" class="r-tab">电脑</a><a href="javascript:;" class="r-tab">家居</a>
+            </div>
+        </div>
+        <div class="sjxq">
+            <div class="sj-hs"><img src="img/jsq.jpg" alt="" class="sj-hs-zs"><img src="img/sdjqr.jpg" alt=""
+                                                                                   class="sj-hs-zs"></div>
+            <div class="sj-hs-y">
+                <div class="bk1 dw">
+                    <div class="dw1">洗的也干净，白色很好看</div>
+                    <div class="xp"><a href="">新品</a></div>
+                    <img src="img/xiyiji.jpg" alt="">
+                    <div class="xm1">米家互联网洗烘一体机10kg</div>
+                    <div class="xl">米家互联网洗烘一体机10kg</div>
+                    <div class="rmb">1999元</div>
+                </div>
+                <div class="bk1 dw">
+                    <div class="dw1">洗的也干净，白色很好看</div>
+                    <div class="xp"><a href="">新品</a></div>
+                    <img src="img/xiyiji.jpg" alt="">
+                    <div class="xm1">米家互联网洗烘一体机10kg</div>
+                    <div class="xl">米家互联网洗烘一体机10kg</div>
+                    <div class="rmb">1999元</div>
+                </div>
+                <div class="bk1 dw">
+                    <div class="dw1">洗的也干净，白色很好看</div>
+                    <div class="xp"><a href="">新品</a></div>
+                    <img src="img/xiyiji.jpg" alt="">
+                    <div class="xm1">米家互联网洗烘一体机10kg</div>
+                    <div class="xl">米家互联网洗烘一体机10kg</div>
+                    <div class="rmb">1999元</div>
+                </div>
+                <div class="bk1 dw">
+                    <div class="dw1">洗的也干净，白色很好看</div>
+                    <div class="xp"><a href="">新品</a></div>
+                    <img src="img/xiyiji.jpg" alt="">
+                    <div class="xm1">米家互联网洗烘一体机10kg</div>
+                    <div class="xl">米家互联网洗烘一体机10kg</div>
+                    <div class="rmb">1999元</div>
+                </div>
+                <div class="bk1 dw">
+                    <div class="dw1">洗的也干净，白色很好看</div>
+                    <div class="xp"><a href="">新品</a></div>
+                    <img src="img/xiyiji.jpg" alt="">
+                    <div class="xm1">米家互联网洗烘一体机10kg</div>
+                    <div class="xl">米家互联网洗烘一体机10kg</div>
+                    <div class="rmb">1999元</div>
+                </div>
+                <div class="bk1 dw">
+                    <div class="dw1">洗的也干净，白色很好看</div>
+                    <div class="xp"><a href="">新品</a></div>
+                    <img src="img/xiyiji.jpg" alt="">
+                    <div class="xm1">米家互联网洗烘一体机10kg</div>
+                    <div class="xl">米家互联网洗烘一体机10kg</div>
+                    <div class="rmb">1999元</div>
+                </div>
+                <div class="bk1 dw">
+                    <div class="dw1">洗的也干净，白色很好看</div>
+                    <div class="xp"><a href="">新品</a></div>
+                    <img src="img/xiyiji.jpg" alt="">
+                    <div class="xm1">米家互联网洗烘一体机10kg</div>
+                    <div class="xl">米家互联网洗烘一体机10kg</div>
+                    <div class="rmb">1999元</div>
+                </div>
+                <div class="bk1 dw">
+                    <div class="dw1">洗的也干净，白色很好看</div>
+                    <div class="xp"><a href="">新品</a></div>
+                    <img src="img/xiyiji.jpg" alt="">
+                    <div class="xm1">米家互联网洗烘一体机10kg</div>
+                    <div class="xl">米家互联网洗烘一体机10kg</div>
+                    <div class="rmb">1999元</div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+<div class="tuijian">
+    <div class="sj1">
+        <div class="ck1">
+            <a href="" class="sj2">为你推荐</a>
+        </div>
+        <div class="tuijian-all">
+            <img src="img/zbj.jpg" alt="" class="tuijian-img"><img src="img/zbj.jpg" alt="" class="tuijian-img">
+            <img src="img/zbj.jpg" alt="" class="tuijian-img"><img src="img/zbj.jpg" alt="" class="tuijian-img"><img
+                src="img/zbj.jpg" alt="" class="tuijian-img">
+
+        </div>
+    </div>
+</div>
+<div class="reping">
+    <div class="sj1">
+        <div class="ck1">
+            <a href="" class="sj2">热评产品</a>
+        </div>
+        <div class="reping-all">
+            <img src="img/yinxiang.jpg" alt="" class="reping-img">
+            <img src="img/yinxiang.jpg" alt="" class="reping-img">
+            <img src="img/yinxiang.jpg" alt="" class="reping-img">
+            <img src="img/yinxiang.jpg" alt="" class="reping-img">
+
+        </div>
+    </div>
+</div>
+<div class="hew">
+    <div class="hew-hez">
+        <div class="hew-bt">内容</div>
+        <div class="hew-nr1">
+            <div class="miui">
+                <div class="zit">MIUI 主题</div>
+                <div class="zit2">BROWN & FRIENDS定制主题</div>
+                <div class="z3">BROWN & FRIENDS 小米定制主题，是LINE FRIENDS在与小米公司品牌合作基础上，为小米米粉节特殊定制。</div>
+                <img src="img/xmad_1554795253_HKsNc.png" alt="">
+                <div class="lunbo">
+                    <div class="dian onclick"></div>
+                    <div class="dian"></div>
+                    <div class="dian"></div>
+                </div>
+                <a href="javascript:;" class="z"><</a>
+                <a href="javascript:;" class="y">></a>
+            </div>
+            <div class="miui">
+                <div class="zit">MIUI 主题</div>
+                <div class="zit2">BROWN & FRIENDS定制主题</div>
+                <div class="z3">BROWN & FRIENDS 小米定制主题，是LINE FRIENDS在与小米公司品牌合作基础上，为小米米粉节特殊定制。</div>
+                <img src="img/xmad_1554795253_HKsNc.png" alt="">
+                <div class="lunbo">
+                    <div class="dian onclick"></div>
+                    <div class="dian"></div>
+                    <div class="dian"></div>
+                </div>
+                <a href="javascript:;" class="z"><</a>
+                <a href="javascript:;" class="y">></a>
+            </div>
+            <div class="miui">
+                <div class="zit">MIUI 主题</div>
+                <div class="zit2">BROWN & FRIENDS定制主题</div>
+                <div class="z3">BROWN & FRIENDS 小米定制主题，是LINE FRIENDS在与小米公司品牌合作基础上，为小米米粉节特殊定制。</div>
+                <img src="img/xmad_1554795253_HKsNc.png" alt="">
+                <div class="lunbo">
+                    <div class="dian onclick"></div>
+                    <div class="dian"></div>
+                    <div class="dian"></div>
+                </div>
+                <a href="javascript:;" class="z"><</a>
+                <a href="javascript:;" class="y">></a>
+            </div>
+            <div class="miui2">
+                <div class="zit">MIUI 主题</div>
+                <div class="zit2">BROWN & FRIENDS定制主题</div>
+                <div class="z3">BROWN & FRIENDS 小米定制主题，是LINE FRIENDS在与小米公司品牌合作基础上，为小米米粉节特殊定制。</div>
+                <img src="img/xmad_1554795253_HKsNc.png" alt="">
+                <div class="lunbo">
+                    <div class="dian onclick"></div>
+                    <div class="dian"></div>
+                    <div class="dian"></div>
+                </div>
+                <a href="javascript:;" class="z"><</a>
+                <a href="javascript:;" class="y">></a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="shiping">
+    <div class="sj1">
+        <div class="ck1">
+            <a href="" class="sj2">视频</a>
+            <a href="" class="ckgd">查看全部 <i class="iconfont icon-arrow-backimg"></i></a>
+        </div>
+        <div class="shiping-all">
+            <div class="shiping-item">
+                <a class="shiping-img"></a>
+                <div class="shiping-text">
+                    <a href="" class="shiping-tittle">王源 & 小米9 全新广告大片</a>
+                    <p class="shiping-miaoshu">好看又能打！我反正被帅到了，Will You？</p>
+                </div>
+            </div>
+            <div class="shiping-item">
+                <a class="shiping-img"></a>
+                <div class="shiping-text">
+                    <a href="" class="shiping-tittle">王源 & 小米9 全新广告大片</a>
+                    <p class="shiping-miaoshu">好看又能打！我反正被帅到了，Will You？</p>
+                </div>
+            </div>
+            <div class="shiping-item">
+                <a class="shiping-img"></a>
+                <div class="shiping-text">
+                    <a href="" class="shiping-tittle">王源 & 小米9 全新广告大片</a>
+                    <p class="shiping-miaoshu">好看又能打！我反正被帅到了，Will You？</p>
+                </div>
+            </div>
+            <div class="shiping-item">
+                <a class="shiping-img"></a>
+                <div class="shiping-text">
+                    <a href="" class="shiping-tittle">王源 & 小米9 全新广告大片</a>
+                    <p class="shiping-miaoshu">好看又能打！我反正被帅到了，Will You？</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div class="zddt">
+    <div class="ditu">
+        <div class="biao">
+            <a href="" class="ass"><i class="iconfont icon-weixiu"></i>预约维修服务</a>
+            <div class="spcc"></div>
+            <a href="" class="ass"><i class="iconfont icon-sevenday"></i>7天无理由退货</a>
+            <div class="spcc"></div>
+            <a href="" class="ass"><i class="iconfont icon-icon-test"></i>15天免费换货</a>
+            <div class="spcc"></div>
+            <a href="" class="ass"><i class="iconfont icon-liwu"></i>满150元包邮</a>
+            <div class="spcc"></div>
+            <a href="" class="ass"><i class="iconfont icon-dizhi"></i>520余家售后网点</a>
+        </div>
+        <div class="vc">
+            <div class="vc-a">
+                <div class="a1">帮助中心</div>
+                <a href="">账户管理</a>
+                <a href="">购物指南</a>
+                <a href="">订单操作</a>
+            </div>
+            <div class="vc-a">
+                <div class="a1">服务支持</div>
+                <a href="">售后政策</a>
+                <a href="">自助服务</a>
+                <a href="">相关下载</a>
+            </div>
+            <div class="vc-a">
+                <div class="a1">线下门店</div>
+                <a href="">小米之家</a>
+                <a href="">服务网点</a>
+                <a href="">授权体验店</a>
+            </div>
+            <div class="vc-a">
+                <div class="a1">关于小米</div>
+                <a href="">了解小米</a>
+                <a href="">加入小米</a>
+                <a href="">投资者关系</a>
+            </div>
+            <div class="vc-a">
+                <div class="a1">关注我们</div>
+                <a href="">新浪微博</a>
+                <a href="">官方微信</a>
+                <a href="">联系我们</a>
+            </div>
+            <div class="vc-a">
+                <div class="a1">特色服务</div>
+                <a href="">F 码通道</a>
+                <a href="">礼物码</a>
+                <a href="">防伪查询</a></div>
+            <div class="aac">
+                <div class="dh">400-100-5678</div>
+                <div class="p">
+                    <div class="p1">周一至周日 8:00-18:00</div>
+                    <div class="p1">（仅收市话费）</div>
+                </div>
+                <div class="kk"><i class="iconfont icon-liaotian"></i> 联系客服</div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- 定位 -->
+<div class="d1">
+    <div class="dd">
+        <div class="erweima"></div>
+        <div class="sj"></div>
+        <p>手机APP</p></div>
+    <div class="dd">
+        <div class="ren"></div>
+        <p>个人中心</p></div>
+    <div class="dd">
+        <div class="shouhou"></div>
+        <p>售后服务</p></div>
+    <div class="dd">
+        <div class="kefu"></div>
+        <p>联系客服</p></div>
+    <div class="dd">
+        <div class="gouwuche"></div>
+        <p>购物车</p></div>
+    <div class="dd last">
+        <div class="dingbu"></div>
+        <p>回顶部</p></div>
+</div>
+<div class="site-info">
+    <div class="container">
+        <div class="logo ir"></div>
+        <div class="info-text">
+            <p class="sites"><a rel="nofollow" href="//www.mi.com/index.html" target="_blank"
+                                data-stat-id="4bc9b84ee8285a77"
+                                onclick="_msq.push(['trackEvent', '81190ccc4d52f577-4bc9b84ee8285a77', '//www.mi.com/index.html', 'pcpid', '']);">小米商城</a><span
+                    class="sep">|</span><a rel="nofollow" href="https://www.miui.com/" target="_blank"
+                                           data-stat-id="d1077e912318a8aa"
+                                           onclick="_msq.push(['trackEvent', '81190ccc4d52f577-d1077e912318a8aa', 'https://www.miui.com/', 'pcpid', '']);">MIUI</a><span
+                    class="sep">|</span><a rel="nofollow" href="https://home.mi.com/index.html" target="_blank"
+                                           data-stat-id="bf8fb9978f16ecd7"
+                                           onclick="_msq.push(['trackEvent', '81190ccc4d52f577-bf8fb9978f16ecd7', 'https://home.mi.com/index.html', 'pcpid', '']);">米家</a><span
+                    class="sep">|</span><a rel="nofollow" href="http://www.miliao.com/" target="_blank"
+                                           data-stat-id="8fa92518f4f4139b"
+                                           onclick="_msq.push(['trackEvent', '81190ccc4d52f577-8fa92518f4f4139b', 'http://www.miliao.com/', 'pcpid', '']);">米聊</a><span
+                    class="sep">|</span><a rel="nofollow" href="https://www.duokan.com/" target="_blank"
+                                           data-stat-id="d0e7b344070ce805"
+                                           onclick="_msq.push(['trackEvent', '81190ccc4d52f577-d0e7b344070ce805', 'https://www.duokan.com/', 'pcpid', '']);">多看</a><span
+                    class="sep">|</span><a rel="nofollow" href="http://game.xiaomi.com/" target="_blank"
+                                           data-stat-id="d14f6094510ae91d"
+                                           onclick="_msq.push(['trackEvent', '81190ccc4d52f577-d14f6094510ae91d', 'http://game.xiaomi.com/', 'pcpid', '']);">游戏</a><span
+                    class="sep">|</span><a rel="nofollow" href="http://www.miwifi.com/" target="_blank"
+                                           data-stat-id="89c8a04b65d5a2cc"
+                                           onclick="_msq.push(['trackEvent', '81190ccc4d52f577-89c8a04b65d5a2cc', 'http://www.miwifi.com/', 'pcpid', '']);">路由器</a><span
+                    class="sep">|</span><a rel="nofollow" href="//www.mi.com/micard/" target="_blank"
+                                           data-stat-id="8383fc54e821723e"
+                                           onclick="_msq.push(['trackEvent', '81190ccc4d52f577-8383fc54e821723e', '//www.mi.com/micard/', 'pcpid', '']);">米粉卡</a><span
+                    class="sep">|</span><a rel="nofollow"
+                                           href="https://b.mi.com/?client_id=180100031058&amp;masid=17409.0358"
+                                           target="_blank" data-stat-id="d4e20cb7bc05f0ca"
+                                           onclick="_msq.push(['trackEvent', '81190ccc4d52f577-d4e20cb7bc05f0ca', 'https://b.mi.com/client_id=180100031058&amp;masid=17409.0358', 'pcpid', '']);">政企服务</a><span
+                    class="sep">|</span><a rel="nofollow" href="https://xiaomi.tmall.com/" target="_blank"
+                                           data-stat-id="6e21be38e4356064"
+                                           onclick="_msq.push(['trackEvent', '81190ccc4d52f577-6e21be38e4356064', 'https://xiaomi.tmall.com/', 'pcpid', '']);">小米天猫店</a><span
+                    class="sep">|</span><a rel="nofollow" href="//www.mi.com/about/privacy/" target="_blank"
+                                           data-stat-id="beec4a14d618b18d"
+                                           onclick="_msq.push(['trackEvent', '81190ccc4d52f577-beec4a14d618b18d', '//www.mi.com/about/privacy/', 'pcpid', '']);">隐私政策</a><span
+                    class="sep">|</span><a rel="nofollow" href="//www.mi.com/about/user-agreement/" target="_blank"
+                                           data-stat-id="8bc3a17a70d5f12d"
+                                           onclick="_msq.push(['trackEvent', '81190ccc4d52f577-8bc3a17a70d5f12d', '//www.mi.com/about/user-agreement/', 'pcpid', '']);">商城用户协议</a><span
+                    class="sep">|</span><a rel="nofollow"
+                                           href="//static.account.xiaomi.com/html/agreement/account/cn.html"
+                                           target="_blank" data-stat-id="cc054ff5d6df9f4e"
+                                           onclick="_msq.push(['trackEvent', '81190ccc4d52f577-cc054ff5d6df9f4e', '//static.account.xiaomi.com/html/agreement/account/cn.html', 'pcpid', '']);">账号协议</a><span
+                    class="sep">|</span><a rel="nofollow" href="https://static.mi.com/feedback/" target="_blank"
+                                           data-stat-id="de622113e8f771bc"
+                                           onclick="_msq.push(['trackEvent', '81190ccc4d52f577-de622113e8f771bc', 'https://static.mi.com/feedback/', 'pcpid', '']);">问题反馈</a><span
+                    class="sep">|</span><a rel="nofollow" href="//www.mi.com/jiancha/" target="_blank"
+                                           data-stat-id="f5ca8a00d46ba8a6"
+                                           onclick="_msq.push(['trackEvent', '81190ccc4d52f577-f5ca8a00d46ba8a6', '//www.mi.com/jiancha/', 'pcpid', '']);">廉正举报</a><span
+                    class="sep">|</span><a rel="nofollow" href="https://integrity.mi.com/" target="_blank"
+                                           data-stat-id="73b66047a8941cf8"
+                                           onclick="_msq.push(['trackEvent', '81190ccc4d52f577-73b66047a8941cf8', 'https://integrity.mi.com/', 'pcpid', '']);">诚信合规</a><span
+                    class="sep">|</span><a rel="nofollow" href="#J_modal-globalSites" data-toggle="modal"
+                                           data-stat-id="372d1fe9f6763b90"
+                                           onclick="_msq.push(['trackEvent', '81190ccc4d52f577-372d1fe9f6763b90', '#J_modal-globalSites', 'pcpid', '']);">Select
+                Region</a></p>
+            <p>©
+                <a href=" " target="_blank" title="mi.com" data-stat-id="bdfd116c84984884"
+                   onclick="_msq.push(['trackEvent', '81190ccc4d52f577-bdfd116c84984884', '', 'pcpid', '']);">mi.com</a>
+                京ICP证110507号
+                <a href="http://beian.miit.gov.cn/" target="_blank" rel="nofollow" data-stat-id="09f3ca7af7fc3710"
+                   onclick="_msq.push(['trackEvent', '81190ccc4d52f577-09f3ca7af7fc3710', 'http://beian.miit.gov.cn/', 'pcpid', '']);">京ICP备10046444号</a>
+                <a rel="nofollow" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010802020134"
+                   target="_blank" data-stat-id="e9d2688beb41458a"
+                   onclick="_msq.push(['trackEvent', '81190ccc4d52f577-e9d2688beb41458a', 'http://www.beian.gov.cn/portal/registerSystemInforecordcode=11010802020134', 'pcpid', '']);">京公网安备11010802020134号 </a>
+                <a href="//www.mi.com/culture-license/" target="_blank" data-stat-id="059ce48ed7ed6a36"
+                   onclick="_msq.push(['trackEvent', '81190ccc4d52f577-059ce48ed7ed6a36', '//www.mi.com/culture-license/', 'pcpid', '']);">京网文[2017]1530-131号</a>
+                <br>
+                <a href="//www.mi.com/medical/record/" target="_blank" data-stat-id="97cdd5ee52424ea3"
+                   onclick="_msq.push(['trackEvent', '81190ccc4d52f577-97cdd5ee52424ea3', '//www.mi.com/medical/record/', 'pcpid', '']);">（京）网械平台备字（2018）第00005号
+                </a>
+                <a href="//www.mi.com/medical/qualification/" target="_blank" data-stat-id="f4696bf96a52cdae"
+                   onclick="_msq.push(['trackEvent', '81190ccc4d52f577-f4696bf96a52cdae', '//www.mi.com/medical/qualification/', 'pcpid', '']);">互联网药品信息服务资格证
+                    (京) -非经营性-2014-0090
+                </a>
+                <a href="//www.mi.com/business-license/" target="_blank" data-stat-id="3ed1ade2d90f5e8a"
+                   onclick="_msq.push(['trackEvent', '81190ccc4d52f577-3ed1ade2d90f5e8a', '//www.mi.com/business-license/', 'pcpid', '']);">营业执照</a>
+                <a href="//www.mi.com/medical/list/" target="_blank" data-stat-id="5186b38734e64ad1"
+                   onclick="_msq.push(['trackEvent', '81190ccc4d52f577-5186b38734e64ad1', '//www.mi.com/medical/list/', 'pcpid', '']);">医疗器械公告</a>
+                <br>
+                <a href="//cdn.cnbj1.fds.api.mi-img.com/mi-mall/af5b8ef38e7d57c5ee7fa4289ccf4df8.png"
+                   target="_blank" data-stat-id="22eb6b5cf4b462d7"
+                   onclick="_msq.push(['trackEvent', '81190ccc4d52f577-22eb6b5cf4b462d7', '//cdn.cnbj1.fds.api.mi-img.com/mi-mall/af5b8ef38e7d57c5ee7fa4289ccf4df8.png', 'pcpid', '']);">增值电信业务许可证</a>&nbsp;
+                网络食品经营备案（京）【2018】WLSPJYBAHF-12 &nbsp;
+                <a href="//cdn.cnbj1.fds.api.mi-img.com/mi-mall/fe7383e11127caea371f17156f429a1e.png"
+                   target="_blank" data-stat-id="911257f4cef77495"
+                   onclick="_msq.push(['trackEvent', '81190ccc4d52f577-911257f4cef77495', '//cdn.cnbj1.fds.api.mi-img.com/mi-mall/fe7383e11127caea371f17156f429a1e.png', 'pcpid', '']);">食品经营许可证</a>
+                <br>违法和不良信息举报电话：185-0130-1238 <a href="https://www.mi.com/static/intellectual/index.html"
+                                                 target="_blank" data-stat-id="1f66dd3b1b0f7218"
+                                                 onclick="_msq.push(['trackEvent', '81190ccc4d52f577-1f66dd3b1b0f7218', 'https://www.mi.com/static/intellectual/index.html', 'pcpid', '']);">知识产权侵权投诉</a>
+                本网站所列数据，除特殊说明，所有数据均出自我司实验室测试</p>
+        </div>
+        <div class="info-links">
+            <a rel="nofollow"
+               href="//privacy.truste.com/privacy-seal/validation?rid=4fc28a8c-6822-4980-9c4b-9fdc69b94eb8&amp;lang=zh-cn"
+               target="_blank" data-stat-id="d79bd36766f023f0"
+               onclick="_msq.push(['trackEvent', '81190ccc4d52f577-d79bd36766f023f0', '//privacy.truste.com/privacy-seal/validationrid=4fc28a8c-6822-4980-9c4b-9fdc69b94eb8&amp;lang=zh-cn', 'pcpid', '']);"><img
+                    rel="nofollow" src="//i1.mifile.cn/f/i/17/site/truste.png"
+                    alt="TRUSTe Privacy Certification"></a>
+            <a rel="nofollow" href="//search.szfw.org/cert/l/CX20120926001783002010" target="_blank"
+               data-stat-id="f0877449bc91038d"
+               onclick="_msq.push(['trackEvent', '81190ccc4d52f577-f0877449bc91038d', '//search.szfw.org/cert/l/CX20120926001783002010', 'pcpid', '']);"><img
+                    rel="nofollow" src="//s01.mifile.cn/i/v-logo-2.png" alt="诚信网站"></a>
+            <a rel="nofollow"
+               href="https://ss.knet.cn/verifyseal.dll?sn=e12033011010015771301369&amp;ct=df&amp;pa=461082"
+               target="_blank" data-stat-id="2173f8773b3dc666"
+               onclick="_msq.push(['trackEvent', '81190ccc4d52f577-2173f8773b3dc666', 'https://ss.knet.cn/verifyseal.dllsn=e12033011010015771301369&amp;ct=df&amp;pa=461082', 'pcpid', '']);"><img
+                    rel="nofollow" src="//s01.mifile.cn/i/v-logo-1.png" alt="可信网站"></a>
+            <a rel="nofollow" href="http://www.315online.com.cn/member/315140007.html" target="_blank"
+               data-stat-id="d2aa5eabb354499e"
+               onclick="_msq.push(['trackEvent', '81190ccc4d52f577-d2aa5eabb354499e', 'http://www.315online.com.cn/member/315140007.html', 'pcpid', '']);"><img
+                    rel="nofollow" src="//s01.mifile.cn/i/v-logo-3.png" alt="网上交易保障中心"></a>
+            <a rel="nofollow" href="https://www.mi.com/service/buy/commitment/" target="_blank"
+               data-stat-id="075070cd3386be85"
+               onclick="_msq.push(['trackEvent', '81190ccc4d52f577-075070cd3386be85', 'https://www.mi.com/service/buy/commitment/', 'pcpid', '']);"><img
+                    rel="nofollow" src="//i8.mifile.cn/b2c-mimall-media/ba10428a4f9495ac310fd0b5e0cf8370.png"
+                    alt="诚信经营 放心消费"></a>
+        </div>
+    </div>
+    <div class="slogan ir"><p>探索黑科技，小米为发烧而生!</p></div>
+</div>
+</body>
+</html>
